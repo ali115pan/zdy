@@ -1,0 +1,22 @@
+{
+    "wogg_source_url": "https://www.xn--sss604efuw.com/",
+    "xjs_source_url": "https://mlink.cc/520TV",
+    "github_yuan_json_url": "https://github.catvod.com/https://raw.githubusercontent.com/celin1286/xiaosa/main/yuan.json",
+    "redirect_url": "http://127.0.0.1:8080/test/del/redirect",
+    "redirect_token": "XXX",
+    "site_mappings": {
+        "立播": "libo",
+        "闪电": "shandian",
+        "欧哥": "ouge",
+        "小米": "xiaomi",
+        "多多": "duoduo",
+        "蜡笔": "labi",
+        "至臻": "zhizhen",
+        "木偶": "mogg",
+        "六趣": "liuqu",
+        "虎斑": "huban",
+        "下饭": "xiafan",
+        "玩偶": "wogg",
+        "星剧社": "star2"
+    }
+}
