@@ -11,19 +11,21 @@ from datetime import datetime, timezone, timedelta
 from telethon import TelegramClient, functions, events
 from telethon.tl.types import MessageMediaPhoto, MessageEntityTextUrl
 from telethon.sessions import StringSession
-from telethon.tl.functions.messages import GetHistoryRequest
+from telethon.tl.functions.messages import GetHistoryRequest, GetMessagesRequest, DeleteMessagesRequest
 from telethon.tl.functions.channels import JoinChannelRequest
 from collections import deque
-from concurrent.futures import ThreadPoolExecutor
+from logging.handlers import TimedRotatingFileHandler
 
-# 设置日志
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    filename='tgzf.log',  # 日志文件
-    filemode='a'  # 追加模式
+# 设置日志（按天轮换日志文件）
+log_handler = TimedRotatingFileHandler(
+    'tgzf.log',  # 日志文件
+    when='midnight',  # 每天午夜轮换
+    backupCount=7  # 保留最近7天的日志
 )
+log_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+logger.addHandler(log_handler)
 
 # 读取配置文件
 config_path = os.path.join(os.path.dirname(__file__), 'tgzf.json')
@@ -96,6 +98,20 @@ class TGForwarder:
             self.client = TelegramClient(StringSession(string_session), api_id, api_hash)
         else:
             self.client = TelegramClient(StringSession(string_session), api_id, api_hash, proxy=proxy)
+        self.channel_entities = {}  # 缓存频道实体
+        self.total = 0  # 初始化 total 为 0
+
+    async def get_channel_entity(self, channel_name):
+        """
+        获取频道实体并缓存
+        """
+        if channel_name not in self.channel_entities:
+            try:
+                self.channel_entities[channel_name] = await self.client.get_entity(channel_name)
+            except Exception as e:
+                logger.warning(f"频道 {channel_name} 不存在或无法访问: {e}")
+                return None
+        return self.channel_entities[channel_name]
 
     def random_wait(self, min_ms, max_ms):
         min_sec = min_ms / 1000
@@ -159,19 +175,10 @@ class TGForwarder:
         else:
             await self.client.send_message(target_chat_name, self.replace_targets(text))
 
-    async def get_peer(self, client, channel_name):
-        peer = None
-        try:
-            peer = await client.get_input_entity(channel_name)
-        except Exception as e:
-            logger.warning(f"频道 {channel_name} 不存在或无法访问: {e}")
-        finally:
-            return peer
-
     async def get_all_replies(self, chat_name, message):
         offset_id = 0
         all_replies = []
-        peer = await self.get_peer(self.client, chat_name)
+        peer = await self.get_channel_entity(chat_name)
         if peer is None:
             return []
         while True:
@@ -308,7 +315,7 @@ class TGForwarder:
         china_timezone = timezone(china_timezone_offset)
         start_time = datetime.strptime(start_time_str, "%Y-%m-%d %H:%M").replace(tzinfo=china_timezone)
         end_time = datetime.strptime(end_time_str, "%Y-%m-%d %H:%M").replace(tzinfo=china_timezone)
-        chat = await self.client.get_entity(chat_name)
+        chat = await self.get_channel_entity(chat_name)
         async for message in self.client.iter_messages(chat):
             message_china_time = message.date.astimezone(china_timezone)
             if start_time <= message_china_time <= end_time:
@@ -356,7 +363,6 @@ class TGForwarder:
     async def deduplicate_links(self, links=[]):
         """
         删除聊天中重复链接的旧消息，只保留最新的消息
-        :param links: 需要检查的链接列表
         """
         target_links = set(self.checkbox['links']) if not links else links
         if not target_links:
@@ -369,26 +375,29 @@ class TGForwarder:
 
         for chat_name in chats:
             try:
-                chat = await self.client.get_entity(chat_name)
+                chat = await self.get_channel_entity(chat_name)
+                if not chat:
+                    continue
+
                 links_exist = set()
                 messages_to_delete = []
                 async for message in self.client.iter_messages(chat, limit=1000):
                     if message.message:
                         links_in_message = re.findall(self.pattern, message.message)
-                    if not links_in_message:
-                        continue
-                    link = links_in_message[0]
-                    if link in target_links:
-                        if link in links_exist:
-                            messages_to_delete.append(message.id)
-                        else:
-                            links_exist.add(link)
+                        if not links_in_message:
+                            continue
+                        link = links_in_message[0]
+                        if link in target_links:
+                            if link in links_exist:
+                                messages_to_delete.append(message.id)
+                            else:
+                                links_exist.add(link)
 
                 if messages_to_delete:
                     logger.info(f"【{chat_name}】删除 {len(messages_to_delete)} 条历史重复消息")
                     for i in range(0, len(messages_to_delete), 100):
                         batch = messages_to_delete[i:i + 100]
-                        await self.client.delete_messages(chat, batch)
+                        await self.client(DeleteMessagesRequest(chat, batch))
             except Exception as e:
                 logger.error(f"删除重复消息时出错: {e}")
 
@@ -408,7 +417,7 @@ class TGForwarder:
                     self.checkbox["today_count"] = 0
                 self.today_count = self.checkbox.get('today_count') if self.checkbox.get('today_count') else self.checknum
         self.checknum = self.checknum if self.today_count < self.checknum else self.today_count
-        chat = await self.client.get_entity(self.forward_to_channel)
+        chat = await self.get_channel_entity(self.forward_to_channel)
         messages = self.client.iter_messages(chat, limit=self.checknum)
         async for message in messages:
             if hasattr(message.document, 'mime_type'):
@@ -436,14 +445,13 @@ class TGForwarder:
             logger.error(f"操作失败: {e}")
 
     async def forward_messages(self, chat_name, limit, hlinks, hsizes):
-        global total
         links = hlinks
         sizes = hsizes
         logger.info(f'当前监控频道【{chat_name}】，本次检测最近【{len(links)}】条历史资源进行去重')
         try:
             if try_join:
                 await self.client(JoinChannelRequest(chat_name))
-            chat = await self.client.get_entity(chat_name)
+            chat = await self.get_channel_entity(chat_name)
             messages = self.client.iter_messages(chat, limit=limit, reverse=False)
             async for message in self.reverse_async_iter(messages, limit=limit):
                 if self.only_today:
@@ -470,7 +478,7 @@ class TGForwarder:
                         if size not in sizes:
                             await self.copy_and_send_message(chat_name, self.forward_to_channel, message.id, text)
                             sizes.append(size)
-                            total += 1
+                            self.total += 1
                         else:
                             logger.info(f'视频已经存在，size: {size}')
                     elif self.contains(message.message, self.include) and message.message and self.nocontains(message.message, self.exclude):
@@ -480,7 +488,7 @@ class TGForwarder:
                             link = jumpLinks[0] if jumpLinks else matches[0]
                             if link not in links:
                                 await self.dispatch_channel(message, jumpLinks)
-                                total += 1
+                                self.total += 1
                                 links.append(link)
                             else:
                                 logger.info(f'链接已存在，link: {link}')
@@ -492,7 +500,7 @@ class TGForwarder:
                                 size = r.document.size
                                 if size not in sizes:
                                     await self.copy_and_send_message(chat_name, self.forward_to_channel, r.id, r.message)
-                                    total += 1
+                                    self.total += 1
                                     sizes.append(size)
                                 else:
                                     logger.info(f'视频已经存在，size: {size}')
@@ -502,7 +510,7 @@ class TGForwarder:
                                     link = matches[0]
                                     if link not in links:
                                         await self.dispatch_channel(message)
-                                        total += 1
+                                        self.total += 1
                                         links.append(link)
                                     else:
                                         logger.info(f'链接已存在，link: {link}')
@@ -514,27 +522,14 @@ class TGForwarder:
                             link = jumpLinks[0] if jumpLinks else matches[0]
                             if link not in links:
                                 await self.dispatch_channel(message, jumpLinks)
-                                total += 1
+                                self.total += 1
                                 links.append(link)
                             else:
                                 logger.info(f'链接已存在，link: {link}')
-            logger.info(f"从 {chat_name} 转发资源 成功: {total}")
+            logger.info(f"从 {chat_name} 转发资源 成功: {self.total}")
             return list(set(links)), list(set(sizes))
         except Exception as e:
             logger.error(f"从 {chat_name} 转发资源 失败: {e}")
-
-    async def check_channel_existence(self, channel_name):
-        """
-        检查频道是否存在
-        :param channel_name: 频道名称或ID
-        :return: 如果频道存在返回 True，否则返回 False
-        """
-        try:
-            await self.client.get_entity(channel_name)
-            return True
-        except Exception as e:
-            logger.warning(f"频道 {channel_name} 不存在或无法访问: {e}")
-            return False
 
     async def main(self):
         start_time = time.time()
@@ -545,7 +540,7 @@ class TGForwarder:
         for channel_name in self.channels_groups_monitor:
             if '|' in channel_name:
                 channel_name = channel_name.split('|')[0]
-            if await self.check_channel_existence(channel_name):
+            if await self.get_channel_entity(channel_name):
                 valid_channels.append(channel_name)
             else:
                 logger.info(f"跳过不存在的频道: {channel_name}")
@@ -556,15 +551,20 @@ class TGForwarder:
             await self.client.disconnect()
             return
 
-        # 只处理有效的频道
+        # 并发处理有效的频道
+        tasks = []
         for chat_name in valid_channels:
             limit = self.limit
             if '|' in chat_name:
                 limit = int(chat_name.split('|')[1])
                 chat_name = chat_name.split('|')[0]
-            global total
-            total = 0
-            links, sizes = await self.forward_messages(chat_name, limit, links, sizes)
+            tasks.append(self.forward_messages(chat_name, limit, links, sizes))
+
+        # 等待所有任务完成
+        results = await asyncio.gather(*tasks)
+        for result in results:
+            if result:
+                links, sizes = result
 
         await self.send_daily_forwarded_count()
         with open(self.history, 'w+', encoding='utf-8') as f:
