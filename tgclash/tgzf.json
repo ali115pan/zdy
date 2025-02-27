@@ -34,7 +34,10 @@
         "Q66Share",
         "share_aliyun",
         "MCPH608",
-        "Lossless_Yinyue"
+		"Movies_Music_And_You",
+        "Lossless_Yinyue",
+		"pan123_share",
+		"xx123pan"
     ],
     "forward_to_channel": "XXX",
     "limit": 40,
@@ -54,6 +57,7 @@
         "anxia.com",
         "alipan.com",
         "aliyundrive.com",
+		"123684.com",
         "夸克云盘",
         "阿里云盘",
         "磁力链接"
@@ -247,13 +251,18 @@
             "target": "XXX"
         },
         {
-            "include": ["无损音乐"],
+            "include": ["音乐","无损音乐"],
             "exclude": ["test2"],
             "target": "XXX"
         },
         {
             "include": ["动漫", "动画", "国漫", "日漫", "美漫", "漫画"],
             "exclude": ["test2", "test1"],
+            "target": "XXX"
+        },
+		{
+            "include": ["123684.com"],
+            "exclude": ["无损音乐", "音乐", "动漫", "动画", "国漫", "日漫", "美漫", "漫画", "真人秀", "综艺", "韩综"],
             "target": "XXX"
         },
         {
