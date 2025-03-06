@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import socks
 import random
@@ -25,8 +26,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# 获取脚本所在的目录
+script_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
+
+# 设置工作目录为脚本所在的目录
+os.chdir(script_dir)
+
 # 读取配置文件
-config_path = os.path.join(os.path.dirname(__file__), 'tgzf.json')
+config_path = os.path.join(script_dir, 'tgzf.json')
 try:
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
@@ -75,7 +82,7 @@ class TGForwarder:
         self.checkbox = {"links":[],"sizes":[],"bot_links":{},"chat_forward_count_msg_id":{},"today":"","today_count":0}
         self.checknum = checknum
         self.today_count = 0
-        self.history = 'history.json'
+        self.history = os.path.join(script_dir, 'history.json')  # 使用脚本目录
         self.pattern = r"(?:链接：\s*)?((?!https?://t\.me)(?:https?://[^\s'】\n]+|magnet:\?xt=urn:btih:[a-zA-Z0-9]+)(?:\?提取码:[^\s'】\n]+)?)"
         self.api_id = api_id
         self.api_hash = api_hash
