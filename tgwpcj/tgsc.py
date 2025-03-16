@@ -40,17 +40,49 @@ globals_dict = {}
 success_num = 0
 error_num = 0
 
+# 获取分类ID函数
+def get_category_id(category_name):
+    """
+    根据分类名称获取分类ID
+    """
+    category_map = {
+        '综艺': 20,
+        '国产剧': 21,
+        '韩日泰': 22,
+        '欧美剧': 23,
+        '夸克盘': 24,
+        'uc盘': 25,
+        '115盘': 26,
+        'UC盘': 25,
+        '运营商': 27,
+        '123盘': 28,
+        '阿里盘': 29,
+        '动漫': 30,
+        '网盘': 31
+    }
+    # 大小写不敏感匹配
+    for key, value in category_map.items():
+        if key.lower() == category_name.lower():
+            return value
+    logger.warning(f"分类 '{category_name}' 不存在于映射表中")
+    return None
+
 # 数据上传函数
 def post_data(data):
+    """
+    上传数据到服务器
+    """
     global success_num, error_num, globals_dict
     data_url = f"{domain_url}/api.php/autotasks/update_data"
     for v in data['list']:
         v['pass'] = Apipass
         v['param'] = json.dumps(globals_dict)
         
+        # 删除旧的 type_id（如果存在）
         if 'type_id' in v:
             del v['type_id']
         
+        # 获取分类ID
         type_name = v.get('type_name', '')
         type_id = get_category_id(type_name)
         if type_id is None:
@@ -59,13 +91,20 @@ def post_data(data):
             continue
         v['type_id'] = type_id
         
+        # 设置默认下载来源
         v['vod_down_url'] = v.get('vod_down_url', '')
         v['vod_down_from'] = 'BJ'
         
         try:
+            # 发送POST请求
             response = session.post(data_url, data=v, headers=headers, timeout=30)
             ret = response.json()
-            log_msg = f"{globals_dict['des']} 第{data['page']}页\n视频名称：{v['vod_name']} {v['vod_remarks']}\n分类名称：{v['type_name']}\n入库提示：{ret['msg']}\n"
+            log_msg = (
+                f"{globals_dict['des']} 第{data['page']}页\n"
+                f"视频名称：{v['vod_name']} {v['vod_remarks']}\n"
+                f"分类名称：{v['type_name']} (ID: {v['type_id']})\n"
+                f"入库提示：{ret['msg']}\n"
+            )
             if "ok" in ret.get("msg"):
                 success_num += 1
             elif ret.get("code") > 3000:
@@ -78,27 +117,11 @@ def post_data(data):
             error_num += 1
             logger.error(f"{globals_dict['des']}\nPOST请求入库失败，错误内容: \n{e}")
 
-# 获取分类ID函数
-def get_category_id(category_name):
-    category_map = {
-        '综艺': 20,
-        '国产剧': 21,
-        '韩日泰': 22,
-        '欧美剧': 23,           
-        '夸克盘': 24,
-        'uc盘': 25,
-        '115盘': 26,
-        'UC盘': 25,
-        '运营商': 27,
-        '123盘': 28,
-        '阿里盘': 29,
-        '动漫': 30,
-        '网盘': 31
-    }
-    return category_map.get(category_name, None)
-
 # 本地文件处理函数
 def process_local_file(file_path):
+    """
+    处理本地文件并返回格式化后的数据
+    """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             local_data = json.load(f)
@@ -174,8 +197,8 @@ if __name__ == "__main__":
                 post_data(local_data)
                 logger.info(f"\n✅ 内容更新任务成功：{success_num}条，失败：{error_num}条")
                 # 清空本地文件
-                Path(local_file_path).unlink()
-                logger.info(f"已清空本地文件：{local_file_path}")
+                # Path(local_file_path).unlink()
+                # logger.info(f"已清空本地文件：{local_file_path}")
             else:
                 logger.error("\n❌ 文件处理失败，请检查：1.文件格式 2.字段匹配")
             sys.exit(0)
