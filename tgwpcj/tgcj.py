@@ -125,20 +125,6 @@ def save_data(table_data):
     with open(json_file_path, 'w', encoding='utf-8') as f:
         json.dump(table_data, f, ensure_ascii=False, indent=4)
 
-def load_unique_keys():
-    """加载持久化的唯一键集合"""
-    unique_keys_file = os.path.join(script_dir, 'unique_keys.json')
-    if os.path.exists(unique_keys_file):
-        with open(unique_keys_file, 'r', encoding='utf-8') as f:
-            return set(json.load(f))
-    return set()
-
-def save_unique_keys(unique_keys):
-    """保存唯一键集合到文件"""
-    unique_keys_file = os.path.join(script_dir, 'unique_keys.json')
-    with open(unique_keys_file, 'w', encoding='utf-8') as f:
-        json.dump(list(unique_keys), f, ensure_ascii=False, indent=4)
-
 def load_last_message_ids():
     """加载每个频道的最后一条消息 ID"""
     last_message_ids_file = os.path.join(script_dir, 'last_message_ids.json')
@@ -160,10 +146,10 @@ def normalize_link(link):
 
 # ------------------------- 采集模块 -------------------------
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))  # 重试 3 次，每次间隔 2 秒
-async def safe_iter_messages(client, channel, limit=50, offset_id=0):
+async def safe_iter_messages(client, channel, limit=50):
     """安全的消息迭代器，支持增量采集"""
     try:
-        async for message in client.iter_messages(channel, limit=limit, offset_id=offset_id):
+        async for message in client.iter_messages(channel, limit=limit):
             yield message
     except Exception as e:
         logging.warning(f"获取消息失败：{str(e)}")  # 使用 WARNING 级别记录错误
@@ -187,7 +173,7 @@ async def get_client():
             continue
     raise Exception("所有代理均不可用")
 
-async def process_message(client, message, table_data, unique_keys, lock):
+async def process_message(client, message, table_data, unique_keys, lock, channel_name):
     """处理单条消息"""
     text = message.text if isinstance(message.text, str) else ''
     if not text.strip() or "@Quark_Movies" in text:
@@ -198,7 +184,7 @@ async def process_message(client, message, table_data, unique_keys, lock):
 
     # 尝试多种正则表达式提取 vod_name
     patterns = [
-        r'(?:名称：|电视剧名：|片名：|标题：)([^（(]+)',  # 匹配 "名称：" 或 "电视剧名：" 等
+        r'(?:名称：|剧名：|片名：|标题：)([^（(]+)',  # 匹配 "名称：" 或 "电视剧名：" 等
         r'《([^》]+)》',  # 匹配中文书名号
         r'([^\n]+)\n链接：',  # 匹配消息第一行作为名称
     ]
@@ -243,7 +229,7 @@ async def process_message(client, message, table_data, unique_keys, lock):
 
         # 提取描述
         vod_content = "暂无简介"  # 默认值
-        description_match = re.search(r'(?:描述：|剧情简介:)\s*([\s\S]*)', text)
+        description_match = re.search(r'(?:描述：|剧情简介:|简介:)\s*([\s\S]*)', text)
         if description_match:
             vod_content = description_match.group(1).strip()  # 提取描述内容
             vod_content = re.sub(r'\n.*', '', vod_content)  # 去除 \n 及其后面的内容
@@ -301,6 +287,9 @@ async def process_message(client, message, table_data, unique_keys, lock):
         table_data.append(new_entry)
         save_data(table_data)  # 实时保存数据
 
+        # 记录采集成功的日志，包含频道名称、消息 ID、资源名称和链接
+        logging.info(f"[频道:{channel_name}, 消息ID:{message.id}] 采集成功：{vod_name} (年份: {vod_year}), 链接: {link}")
+
         return new_entry
 
 async def process_channel(client, channel, table_data, unique_keys, lock, last_message_id):
@@ -318,16 +307,25 @@ async def process_channel(client, channel, table_data, unique_keys, lock, last_m
             logging.warning(f"频道 {channel} 的 last_message_id 无效（{last_message_id}），从最新消息开始采集")
             last_message_id = 0  # 设置为 0，表示从最新消息开始
 
-        # 采集消息（从新到旧）
-        async for message in safe_iter_messages(client, channel, limit=1000, offset_id=last_message_id):
+        # 采集最新的 1000 条消息
+        async for message in safe_iter_messages(client, channel, limit=1000):
             try:
-                new_entry = await process_message(client, message, table_data, unique_keys, lock)  # 传递 client 和 lock
+                # 确保消息 ID 大于 last_message_id
+                if message.id <= last_message_id:
+                    logging.warning(f"跳过旧消息：消息ID {message.id} 小于等于 last_message_id {last_message_id}")
+                    continue
+
+                # 检查消息 ID 是否跳跃过大
+                if message.id - latest_message_id > 1000:
+                    logging.warning(f"频道 {channel} 的消息 ID 跳跃过大：{latest_message_id} -> {message.id}")
+
+                # 处理消息，传递频道名称
+                new_entry = await process_message(client, message, table_data, unique_keys, lock, channel)
                 if new_entry:
                     collected_count += 1
                     # 确保 latest_message_id 是最大的消息 ID
                     if message.id > latest_message_id:
                         latest_message_id = message.id
-                    logging.info(f"[消息ID:{message.id}] 采集成功：{new_entry['vod_name']} (年份: {new_entry['vod_year']})")
             except Exception as e:
                 logging.warning(f"处理消息时出错：{str(e)}")  # 使用 WARNING 级别记录错误
                 continue  # 跳过当前消息，继续处理下一条
@@ -351,6 +349,11 @@ async def collect_data():
         logging.info("Telegram客户端已启动，开始采集...")
 
         os.makedirs(image_dir, exist_ok=True)
+        
+        # 清空 mac_vod.json 文件内容
+        with open(json_file_path, 'w', encoding='utf-8') as f:
+            f.write("[]")
+        logging.info("已清空 mac_vod.json 文件内容") 
 
         try:
             with open(json_file_path, 'r', encoding='utf-8') as f:
@@ -358,8 +361,8 @@ async def collect_data():
         except (FileNotFoundError, json.JSONDecodeError):
             table_data = []
 
-        # 加载持久化的唯一键集合
-        unique_keys = load_unique_keys()
+        # 初始化唯一键集合（仅限本次采集）
+        unique_keys = set()
 
         # 加载每个频道的最后一条消息 ID
         last_message_ids = load_last_message_ids()
@@ -388,9 +391,6 @@ async def collect_data():
 
         # 保存最后一条消息 ID
         save_last_message_ids(last_message_ids)
-
-        # 保存唯一键集合
-        save_unique_keys(unique_keys)
 
         # 最终保存数据
         save_data(table_data)
