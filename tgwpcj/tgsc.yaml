@@ -1,0 +1,10 @@
+# API模式配置
+domain_url: ""
+token: ""
+Apipass: ""
+max_workers: 8
+
+# 本地文件模式配置（启用时取消注释）
+local_file_path: "./mac_vod.json"
+# 新增分类接口配置
+category_api: "/api.php/autotasks/get_category"
