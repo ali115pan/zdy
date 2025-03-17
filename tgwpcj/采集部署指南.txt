@@ -1,0 +1,35 @@
+苹果采集部署指南
+1、下载MacCMS系统(可以不下载，直接用docker compose)
+https://github.com/magicblack/maccms10
+2、docker-config.yaml参考配置
+version: '3.3'
+services:
+    maccms:
+        image: esme518/docker-maccms10
+        container_name: maccms
+        restart: always
+        volumes:
+            - ./data:/var/www/html
+        ports:
+            - 8084:80
+    maccms-db:
+        image: mariadb:10.3
+        container_name: maccms-db
+        restart: always
+        volumes:
+            - ./mysql:/var/lib/mysql
+        environment:
+            - MARIADB_ROOT_PASSWORD=maccms_db_password
+  数据库名：maccms-db  数据库密码：maccms_db_password
+  数据库地址：容器mariadb:10.3对应的IP
+3、docker compose up -d
+查看数据库容器的IP  docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <容器ID或名称>  
+
+5、 部署电影先生模板
+template/DYXS2/asset/admin/Dyxs2.php拷贝到application/admin/controller
+template/DYXS2/asset/admin/dycms.html拷贝到application/admin/view_new/system
+自定义菜单：电影先生2.0,admin/Dyxs2/dyxs2set
+6、部署萌芽
+下载地址www.mycj.pro
+自定义菜单：萌芽采集资源,mycj/union
+
