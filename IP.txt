@@ -1,1029 +1,240 @@
-# Cloudflare优选IP - 亚洲优化版
-# 更新时间: 2025-11-29 21:24:17
-# 总测试节点: 5800 | 可用节点: 2774
-# 格式: IP#备注 延迟 端口 地理位置
-
-# 🚀 亚洲优质节点
-
-# 🌍 其他地区节点
-104.18.132.19#CF优选IP 149ms 端口2083 美国
-104.18.101.21#CF优选IP 149ms 端口2087 美国
-104.18.101.11#CF优选IP 149ms 端口443 美国
-104.18.198.23#CF优选IP 150ms 端口2083 美国
-104.18.193.9#CF优选IP 150ms 端口8443 美国
-104.18.160.2#CF优选IP 150ms 端口8443 美国
-104.16.5.14#CF优选IP 150ms 端口2053 美国
-104.16.96.20#CF优选IP 150ms 端口2096 美国
-104.18.132.22#CF优选IP 150ms 端口443 美国
-104.16.71.5#CF优选IP 150ms 端口443 美国
-104.18.192.22#CF优选IP 150ms 端口8443 美国
-104.16.66.22#CF优选IP 150ms 端口2087 美国
-104.16.102.15#CF优选IP 150ms 端口2087 美国
-104.16.103.25#CF优选IP 150ms 端口8443 美国
-104.18.192.1#CF优选IP 150ms 端口8443 美国
-104.18.97.4#CF优选IP 150ms 端口8443 美国
-104.16.131.22#CF优选IP 150ms 端口2087 美国
-104.18.199.19#CF优选IP 150ms 端口2096 美国
-104.18.102.25#CF优选IP 150ms 端口2087 美国
-104.16.164.5#CF优选IP 150ms 端口443 美国
-104.16.100.25#CF优选IP 150ms 端口443 美国
-104.16.64.12#CF优选IP 150ms 端口8443 美国
-104.16.129.21#CF优选IP 150ms 端口2053 美国
-104.18.199.16#CF优选IP 150ms 端口2087 美国
-104.18.195.17#CF优选IP 150ms 端口2096 美国
-104.16.133.23#CF优选IP 150ms 端口2083 美国
-104.16.98.5#CF优选IP 150ms 端口2053 美国
-104.18.193.24#CF优选IP 150ms 端口2096 美国
-104.16.167.16#CF优选IP 150ms 端口2083 美国
-104.16.1.9#CF优选IP 150ms 端口2053 美国
-104.18.135.20#CF优选IP 150ms 端口2087 美国
-104.18.198.8#CF优选IP 150ms 端口2053 美国
-104.18.194.13#CF优选IP 150ms 端口2083 未知
-104.16.132.17#CF优选IP 150ms 端口2083 美国
-104.18.163.15#CF优选IP 150ms 端口443 美国
-104.16.100.24#CF优选IP 150ms 端口2096 美国
-104.16.99.11#CF优选IP 150ms 端口2087 美国
-104.18.129.3#CF优选IP 150ms 端口2096 美国
-104.18.196.12#CF优选IP 150ms 端口2083 美国
-104.18.198.11#CF优选IP 150ms 端口443 美国
-104.16.101.21#CF优选IP 150ms 端口2083 美国
-104.16.97.22#CF优选IP 150ms 端口2087 美国
-104.16.6.13#CF优选IP 150ms 端口2053 美国
-104.18.102.20#CF优选IP 150ms 端口443 美国
-104.18.134.13#CF优选IP 150ms 端口2053 未知
-104.16.70.22#CF优选IP 150ms 端口2096 美国
-104.16.1.4#CF优选IP 150ms 端口443 美国
-104.16.101.19#CF优选IP 150ms 端口2096 美国
-104.16.101.23#CF优选IP 150ms 端口443 美国
-104.18.198.20#CF优选IP 150ms 端口2083 未知
-104.16.1.6#CF优选IP 150ms 端口2083 美国
-104.18.160.11#CF优选IP 150ms 端口2053 美国
-104.16.134.6#CF优选IP 150ms 端口2087 美国
-104.18.160.5#CF优选IP 150ms 端口2096 美国
-104.18.128.12#CF优选IP 150ms 端口2083 美国
-104.16.98.18#CF优选IP 150ms 端口443 美国
-104.18.165.4#CF优选IP 150ms 端口8443 美国
-104.18.133.3#CF优选IP 150ms 端口2083 美国
-104.16.130.6#CF优选IP 150ms 端口8443 美国
-104.18.132.8#CF优选IP 150ms 端口8443 美国
-104.18.167.17#CF优选IP 150ms 端口2096 美国
-104.16.69.10#CF优选IP 150ms 端口2087 美国
-104.16.70.2#CF优选IP 150ms 端口2053 美国
-104.16.166.16#CF优选IP 150ms 端口8443 美国
-104.16.70.7#CF优选IP 150ms 端口443 美国
-104.18.192.16#CF优选IP 150ms 端口2096 美国
-104.16.68.2#CF优选IP 150ms 端口2053 美国
-104.18.192.7#CF优选IP 150ms 端口2087 美国
-104.16.69.5#CF优选IP 150ms 端口2083 美国
-104.16.131.24#CF优选IP 150ms 端口2087 美国
-104.16.7.20#CF优选IP 150ms 端口2096 美国
-104.18.97.19#CF优选IP 150ms 端口2053 美国
-104.18.197.11#CF优选IP 150ms 端口443 美国
-104.16.67.16#CF优选IP 150ms 端口443 美国
-104.16.131.19#CF优选IP 150ms 端口2053 美国
-104.16.162.14#CF优选IP 150ms 端口8443 美国
-104.18.195.24#CF优选IP 150ms 端口2087 美国
-104.16.6.6#CF优选IP 150ms 端口2053 美国
-104.16.68.12#CF优选IP 150ms 端口2096 美国
-104.16.165.14#CF优选IP 150ms 端口2087 美国
-104.18.165.3#CF优选IP 150ms 端口2053 美国
-104.16.64.9#CF优选IP 150ms 端口8443 美国
-104.18.195.21#CF优选IP 150ms 端口2087 美国
-104.16.71.15#CF优选IP 150ms 端口2083 未知
-104.16.102.5#CF优选IP 150ms 端口2053 美国
-104.16.97.24#CF优选IP 150ms 端口2096 美国
-104.16.5.23#CF优选IP 150ms 端口443 美国
-104.18.101.2#CF优选IP 150ms 端口2096 美国
-104.18.195.1#CF优选IP 150ms 端口8443 美国
-104.18.196.24#CF优选IP 150ms 端口2053 美国
-104.16.7.13#CF优选IP 150ms 端口2087 美国
-104.16.64.21#CF优选IP 150ms 端口2087 美国
-104.18.128.18#CF优选IP 150ms 端口2083 美国
-104.18.96.8#CF优选IP 150ms 端口2083 美国
-104.16.98.11#CF优选IP 150ms 端口443 美国
-104.16.5.11#CF优选IP 150ms 端口2087 美国
-104.18.198.6#CF优选IP 150ms 端口443 美国
-108.162.198.6#CF优选IP 150ms 端口2096 美国
-104.18.101.19#CF优选IP 150ms 端口2083 美国
-104.16.96.17#CF优选IP 150ms 端口443 美国
-104.18.165.18#CF优选IP 150ms 端口8443 美国
-104.16.135.9#CF优选IP 150ms 端口2083 美国
-104.16.0.19#CF优选IP 150ms 端口443 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Secure Login | Access Your Securly Account</title>
-  <meta name="description" content="Log in to your Securly account using your school's Google or Microsoft Azure account.">
-</head>
-
-    <!-- this is where UI start  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="app/css/login-layouts.css">
-    <style>
-        body {
-            background-color: #F7FAFC;
-        }
-    </style>
-    <div class="row hide">
-        <div class="col-sm-5 left-bg-img girl-bg hidden-xs">
-            <a href="/"><img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo"></a>
-
-        </div>
-        <div class="col-sm-7 right-bg-content">
-
-            <section>
-                <div class="form-section">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password..</span>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=2006785128&url=aXBhcGkuY28vMTA0LjE2LjAuMTkvY291bnRyeV9uYW1lLw==&rand=113738264&type=1" class="btn google-button">Login with Google</a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=2006785128&url=aXBhcGkuY28vMTA0LjE2LjAuMTkvY291bnRyeV9uYW1lLw==&rand=113738264&type=2" class="btn azure-button">Login with Microsoft Azure AD</a>
-            </section>
-        </div>
-    </div>
-<!-- New html layout -->
-<div class="container aligned-container student-login-image">
-    <div class="row">
-        <div class="col-sm-6 form-col col-sm-push-6">
-            <section>
-                <div class="form-section box-design">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password.</span>
-                    <!-- S: REL-715 -->
-                    <!-- <a href="/app/login?type=1" class="btn google-button">Login with Google</a> -->
-                    <!-- <a href="/app/login?type=2" class="btn azure-button">Login with Microsoft Azure AD</a> -->
-                    <!-- S: REL-715 -->
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=2006785128&url=aXBhcGkuY28vMTA0LjE2LjAuMTkvY291bnRyeV9uYW1lLw==&rand=113738264&type=1" class="btn btnn btn-google">
-                        <img src="/app/images/g-logo.png" alt="Google Icon"><span>Login with Google</span>
-                    </a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=2006785128&url=aXBhcGkuY28vMTA0LjE2LjAuMTkvY291bnRyeV9uYW1lLw==&rand=113738264&type=2" class="btn btnn btn-azure">
-                        <img src="/app/images/ms-logo.png" alt="MS Azure Icon"><span>Login with Microsoft Azure AD</span>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-                <script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-            <script>
-                $.get('https://sslcheck.securly.com/', function() {})
-                    .fail(function() {
-                        certReport(false);
-                    })
-                    .done(function() {
-                        certReport(true);
-                    });
-                function certReport(status) {
-                    $.post("/app/schools/ajax/certReport.php", { fid: "none - (login)", user:  "(none - login)", time: Math.floor(Date.now()/1000), certStatus: status });
-                }
-            </script>
-                <!-- this is where UI end -->
-    </html>
-104.16.132.24#CF优选IP 150ms 端口8443 美国
-104.18.199.10#CF优选IP 150ms 端口2053 美国
-104.18.162.2#CF优选IP 150ms 端口2087 美国
-104.16.0.16#CF优选IP 150ms 端口2087 美国
-104.18.164.7#CF优选IP 150ms 端口443 美国
-104.16.164.21#CF优选IP 150ms 端口2053 美国
-104.16.102.7#CF优选IP 150ms 端口2053 美国
-104.16.164.22#CF优选IP 150ms 端口8443 美国
-104.16.5.2#CF优选IP 150ms 端口2087 美国
-104.16.96.15#CF优选IP 150ms 端口8443 美国
-104.16.102.11#CF优选IP 150ms 端口443 美国
-104.16.135.3#CF优选IP 150ms 端口443 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Secure Login | Access Your Securly Account</title>
-  <meta name="description" content="Log in to your Securly account using your school's Google or Microsoft Azure account.">
-</head>
-
-    <!-- this is where UI start  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="app/css/login-layouts.css">
-    <style>
-        body {
-            background-color: #F7FAFC;
-        }
-    </style>
-    <div class="row hide">
-        <div class="col-sm-5 left-bg-img girl-bg hidden-xs">
-            <a href="/"><img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo"></a>
-
-        </div>
-        <div class="col-sm-7 right-bg-content">
-
-            <section>
-                <div class="form-section">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password..</span>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=1771904104&url=aXBhcGkuY28vMTA0LjE2LjEzNS4zL2NvdW50cnlfbmFtZS8=&pac=true&rand=1023737071&spac_did_sync_token=1b75da7d31744b41d924208a426bdeb0&type=1" class="btn google-button">Login with Google</a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=1771904104&url=aXBhcGkuY28vMTA0LjE2LjEzNS4zL2NvdW50cnlfbmFtZS8=&pac=true&rand=1023737071&spac_did_sync_token=1b75da7d31744b41d924208a426bdeb0&type=2" class="btn azure-button">Login with Microsoft Azure AD</a>
-            </section>
-        </div>
-    </div>
-<!-- New html layout -->
-<div class="container aligned-container student-login-image">
-    <div class="row">
-        <div class="col-sm-6 form-col col-sm-push-6">
-            <section>
-                <div class="form-section box-design">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password.</span>
-                    <!-- S: REL-715 -->
-                    <!-- <a href="/app/login?type=1" class="btn google-button">Login with Google</a> -->
-                    <!-- <a href="/app/login?type=2" class="btn azure-button">Login with Microsoft Azure AD</a> -->
-                    <!-- S: REL-715 -->
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=1771904104&url=aXBhcGkuY28vMTA0LjE2LjEzNS4zL2NvdW50cnlfbmFtZS8=&pac=true&rand=1023737071&spac_did_sync_token=1b75da7d31744b41d924208a426bdeb0&type=1" class="btn btnn btn-google">
-                        <img src="/app/images/g-logo.png" alt="Google Icon"><span>Login with Google</span>
-                    </a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=1771904104&url=aXBhcGkuY28vMTA0LjE2LjEzNS4zL2NvdW50cnlfbmFtZS8=&pac=true&rand=1023737071&spac_did_sync_token=1b75da7d31744b41d924208a426bdeb0&type=2" class="btn btnn btn-azure">
-                        <img src="/app/images/ms-logo.png" alt="MS Azure Icon"><span>Login with Microsoft Azure AD</span>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-                <script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-            <script>
-                $.get('https://sslcheck.securly.com/', function() {})
-                    .fail(function() {
-                        certReport(false);
-                    })
-                    .done(function() {
-                        certReport(true);
-                    });
-                function certReport(status) {
-                    $.post("/app/schools/ajax/certReport.php", { fid: "none - (login)", user:  "(none - login)", time: Math.floor(Date.now()/1000), certStatus: status });
-                }
-            </script>
-                <!-- this is where UI end -->
-    </html>
-104.16.6.16#CF优选IP 150ms 端口2053 美国
-104.16.135.18#CF优选IP 150ms 端口2087 美国
-104.16.161.9#CF优选IP 150ms 端口2096 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Secure Login | Access Your Securly Account</title>
-  <meta name="description" content="Log in to your Securly account using your school's Google or Microsoft Azure account.">
-</head>
-
-    <!-- this is where UI start  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="app/css/login-layouts.css">
-    <style>
-        body {
-            background-color: #F7FAFC;
-        }
-    </style>
-    <div class="row hide">
-        <div class="col-sm-5 left-bg-img girl-bg hidden-xs">
-            <a href="/"><img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo"></a>
-
-        </div>
-        <div class="col-sm-7 right-bg-content">
-
-            <section>
-                <div class="form-section">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password..</span>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=514202728&url=aXBhcGkuY28vMTA0LjE2LjE2MS45L2NvdW50cnlfbmFtZS8=&rand=1232715248&type=1" class="btn google-button">Login with Google</a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=514202728&url=aXBhcGkuY28vMTA0LjE2LjE2MS45L2NvdW50cnlfbmFtZS8=&rand=1232715248&type=2" class="btn azure-button">Login with Microsoft Azure AD</a>
-            </section>
-        </div>
-    </div>
-<!-- New html layout -->
-<div class="container aligned-container student-login-image">
-    <div class="row">
-        <div class="col-sm-6 form-col col-sm-push-6">
-            <section>
-                <div class="form-section box-design">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password.</span>
-                    <!-- S: REL-715 -->
-                    <!-- <a href="/app/login?type=1" class="btn google-button">Login with Google</a> -->
-                    <!-- <a href="/app/login?type=2" class="btn azure-button">Login with Microsoft Azure AD</a> -->
-                    <!-- S: REL-715 -->
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=514202728&url=aXBhcGkuY28vMTA0LjE2LjE2MS45L2NvdW50cnlfbmFtZS8=&rand=1232715248&type=1" class="btn btnn btn-google">
-                        <img src="/app/images/g-logo.png" alt="Google Icon"><span>Login with Google</span>
-                    </a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=514202728&url=aXBhcGkuY28vMTA0LjE2LjE2MS45L2NvdW50cnlfbmFtZS8=&rand=1232715248&type=2" class="btn btnn btn-azure">
-                        <img src="/app/images/ms-logo.png" alt="MS Azure Icon"><span>Login with Microsoft Azure AD</span>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-                <script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-            <script>
-                $.get('https://sslcheck.securly.com/', function() {})
-                    .fail(function() {
-                        certReport(false);
-                    })
-                    .done(function() {
-                        certReport(true);
-                    });
-                function certReport(status) {
-                    $.post("/app/schools/ajax/certReport.php", { fid: "none - (login)", user:  "(none - login)", time: Math.floor(Date.now()/1000), certStatus: status });
-                }
-            </script>
-                <!-- this is where UI end -->
-    </html>
-104.16.102.9#CF优选IP 150ms 端口443 美国
-104.18.97.15#CF优选IP 150ms 端口2053 美国
-104.16.96.4#CF优选IP 150ms 端口8443 未知
-104.16.7.11#CF优选IP 150ms 端口8443 美国
-104.18.97.5#CF优选IP 150ms 端口2083 美国
-104.16.2.7#CF优选IP 150ms 端口2096 美国
-104.16.130.14#CF优选IP 150ms 端口8443 美国
-104.16.132.1#CF优选IP 150ms 端口2083 美国
-104.16.161.1#CF优选IP 150ms 端口8443 美国
-104.16.166.24#CF优选IP 150ms 端口2053 美国
-104.16.66.23#CF优选IP 150ms 端口2087 美国
-104.16.1.19#CF优选IP 150ms 端口443 美国
-104.16.129.16#CF优选IP 150ms 端口2083 美国
-104.16.129.2#CF优选IP 150ms 端口2096 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Secure Login | Access Your Securly Account</title>
-  <meta name="description" content="Log in to your Securly account using your school's Google or Microsoft Azure account.">
-</head>
-
-    <!-- this is where UI start  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="app/css/login-layouts.css">
-    <style>
-        body {
-            background-color: #F7FAFC;
-        }
-    </style>
-    <div class="row hide">
-        <div class="col-sm-5 left-bg-img girl-bg hidden-xs">
-            <a href="/"><img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo"></a>
-
-        </div>
-        <div class="col-sm-7 right-bg-content">
-
-            <section>
-                <div class="form-section">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password..</span>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=3147308136&url=aXBhcGkuY28vMTA0LjE2LjEyOS4yL2NvdW50cnlfbmFtZS8=&rand=640707702&type=1" class="btn google-button">Login with Google</a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=3147308136&url=aXBhcGkuY28vMTA0LjE2LjEyOS4yL2NvdW50cnlfbmFtZS8=&rand=640707702&type=2" class="btn azure-button">Login with Microsoft Azure AD</a>
-            </section>
-        </div>
-    </div>
-<!-- New html layout -->
-<div class="container aligned-container student-login-image">
-    <div class="row">
-        <div class="col-sm-6 form-col col-sm-push-6">
-            <section>
-                <div class="form-section box-design">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password.</span>
-                    <!-- S: REL-715 -->
-                    <!-- <a href="/app/login?type=1" class="btn google-button">Login with Google</a> -->
-                    <!-- <a href="/app/login?type=2" class="btn azure-button">Login with Microsoft Azure AD</a> -->
-                    <!-- S: REL-715 -->
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=3147308136&url=aXBhcGkuY28vMTA0LjE2LjEyOS4yL2NvdW50cnlfbmFtZS8=&rand=640707702&type=1" class="btn btnn btn-google">
-                        <img src="/app/images/g-logo.png" alt="Google Icon"><span>Login with Google</span>
-                    </a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=3147308136&url=aXBhcGkuY28vMTA0LjE2LjEyOS4yL2NvdW50cnlfbmFtZS8=&rand=640707702&type=2" class="btn btnn btn-azure">
-                        <img src="/app/images/ms-logo.png" alt="MS Azure Icon"><span>Login with Microsoft Azure AD</span>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-                <script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-            <script>
-                $.get('https://sslcheck.securly.com/', function() {})
-                    .fail(function() {
-                        certReport(false);
-                    })
-                    .done(function() {
-                        certReport(true);
-                    });
-                function certReport(status) {
-                    $.post("/app/schools/ajax/certReport.php", { fid: "none - (login)", user:  "(none - login)", time: Math.floor(Date.now()/1000), certStatus: status });
-                }
-            </script>
-                <!-- this is where UI end -->
-    </html>
-104.16.65.10#CF优选IP 150ms 端口2087 美国
-104.16.103.2#CF优选IP 150ms 端口2083 美国
-104.16.65.12#CF优选IP 150ms 端口2087 美国
-104.18.132.6#CF优选IP 150ms 端口8443 美国
-104.18.101.7#CF优选IP 150ms 端口2083 美国
-104.18.194.5#CF优选IP 150ms 端口2087 美国
-104.18.128.13#CF优选IP 150ms 端口2087 美国
-104.18.163.12#CF优选IP 150ms 端口8443 美国
-104.16.0.2#CF优选IP 150ms 端口2087 美国
-104.16.64.11#CF优选IP 150ms 端口2053 美国
-104.18.98.16#CF优选IP 150ms 端口2053 美国
-104.16.70.9#CF优选IP 150ms 端口2087 美国
-104.18.134.17#CF优选IP 150ms 端口2083 美国
-104.16.68.13#CF优选IP 150ms 端口2083 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Secure Login | Access Your Securly Account</title>
-  <meta name="description" content="Log in to your Securly account using your school's Google or Microsoft Azure account.">
-</head>
-
-    <!-- this is where UI start  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="app/css/login-layouts.css">
-    <style>
-        body {
-            background-color: #F7FAFC;
-        }
-    </style>
-    <div class="row hide">
-        <div class="col-sm-5 left-bg-img girl-bg hidden-xs">
-            <a href="/"><img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo"></a>
-
-        </div>
-        <div class="col-sm-7 right-bg-content">
-
-            <section>
-                <div class="form-section">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password..</span>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=698752104&url=aXBhcGkuY28vMTA0LjE2LjY4LjEzL2NvdW50cnlfbmFtZS8=&rand=56357256&type=1" class="btn google-button">Login with Google</a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=698752104&url=aXBhcGkuY28vMTA0LjE2LjY4LjEzL2NvdW50cnlfbmFtZS8=&rand=56357256&type=2" class="btn azure-button">Login with Microsoft Azure AD</a>
-            </section>
-        </div>
-    </div>
-<!-- New html layout -->
-<div class="container aligned-container student-login-image">
-    <div class="row">
-        <div class="col-sm-6 form-col col-sm-push-6">
-            <section>
-                <div class="form-section box-design">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password.</span>
-                    <!-- S: REL-715 -->
-                    <!-- <a href="/app/login?type=1" class="btn google-button">Login with Google</a> -->
-                    <!-- <a href="/app/login?type=2" class="btn azure-button">Login with Microsoft Azure AD</a> -->
-                    <!-- S: REL-715 -->
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=698752104&url=aXBhcGkuY28vMTA0LjE2LjY4LjEzL2NvdW50cnlfbmFtZS8=&rand=56357256&type=1" class="btn btnn btn-google">
-                        <img src="/app/images/g-logo.png" alt="Google Icon"><span>Login with Google</span>
-                    </a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=698752104&url=aXBhcGkuY28vMTA0LjE2LjY4LjEzL2NvdW50cnlfbmFtZS8=&rand=56357256&type=2" class="btn btnn btn-azure">
-                        <img src="/app/images/ms-logo.png" alt="MS Azure Icon"><span>Login with Microsoft Azure AD</span>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-                <script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-            <script>
-                $.get('https://sslcheck.securly.com/', function() {})
-                    .fail(function() {
-                        certReport(false);
-                    })
-                    .done(function() {
-                        certReport(true);
-                    });
-                function certReport(status) {
-                    $.post("/app/schools/ajax/certReport.php", { fid: "none - (login)", user:  "(none - login)", time: Math.floor(Date.now()/1000), certStatus: status });
-                }
-            </script>
-                <!-- this is where UI end -->
-    </html>
-104.18.102.17#CF优选IP 150ms 端口2053 美国
-104.16.6.12#CF优选IP 150ms 端口443 美国
-104.16.101.5#CF优选IP 150ms 端口443 美国
-104.16.163.24#CF优选IP 150ms 端口2083 美国
-104.16.166.8#CF优选IP 150ms 端口2087 美国
-104.18.101.25#CF优选IP 150ms 端口2087 美国
-104.18.129.4#CF优选IP 150ms 端口443 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Secure Login | Access Your Securly Account</title>
-  <meta name="description" content="Log in to your Securly account using your school's Google or Microsoft Azure account.">
-</head>
-
-    <!-- this is where UI start  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="app/css/login-layouts.css">
-    <style>
-        body {
-            background-color: #F7FAFC;
-        }
-    </style>
-    <div class="row hide">
-        <div class="col-sm-5 left-bg-img girl-bg hidden-xs">
-            <a href="/"><img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo"></a>
-
-        </div>
-        <div class="col-sm-7 right-bg-content">
-
-            <section>
-                <div class="form-section">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password..</span>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=732306536&url=aXBhcGkuY28vMTA0LjE4LjEyOS40L2NvdW50cnlfbmFtZS8=&pac=true&rand=107430615&spac_did_sync_token=3267fa483a03e30d8bf1f13a19ffe2f0&type=1" class="btn google-button">Login with Google</a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=732306536&url=aXBhcGkuY28vMTA0LjE4LjEyOS40L2NvdW50cnlfbmFtZS8=&pac=true&rand=107430615&spac_did_sync_token=3267fa483a03e30d8bf1f13a19ffe2f0&type=2" class="btn azure-button">Login with Microsoft Azure AD</a>
-            </section>
-        </div>
-    </div>
-<!-- New html layout -->
-<div class="container aligned-container student-login-image">
-    <div class="row">
-        <div class="col-sm-6 form-col col-sm-push-6">
-            <section>
-                <div class="form-section box-design">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password.</span>
-                    <!-- S: REL-715 -->
-                    <!-- <a href="/app/login?type=1" class="btn google-button">Login with Google</a> -->
-                    <!-- <a href="/app/login?type=2" class="btn azure-button">Login with Microsoft Azure AD</a> -->
-                    <!-- S: REL-715 -->
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=732306536&url=aXBhcGkuY28vMTA0LjE4LjEyOS40L2NvdW50cnlfbmFtZS8=&pac=true&rand=107430615&spac_did_sync_token=3267fa483a03e30d8bf1f13a19ffe2f0&type=1" class="btn btnn btn-google">
-                        <img src="/app/images/g-logo.png" alt="Google Icon"><span>Login with Google</span>
-                    </a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=732306536&url=aXBhcGkuY28vMTA0LjE4LjEyOS40L2NvdW50cnlfbmFtZS8=&pac=true&rand=107430615&spac_did_sync_token=3267fa483a03e30d8bf1f13a19ffe2f0&type=2" class="btn btnn btn-azure">
-                        <img src="/app/images/ms-logo.png" alt="MS Azure Icon"><span>Login with Microsoft Azure AD</span>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-                <script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-            <script>
-                $.get('https://sslcheck.securly.com/', function() {})
-                    .fail(function() {
-                        certReport(false);
-                    })
-                    .done(function() {
-                        certReport(true);
-                    });
-                function certReport(status) {
-                    $.post("/app/schools/ajax/certReport.php", { fid: "none - (login)", user:  "(none - login)", time: Math.floor(Date.now()/1000), certStatus: status });
-                }
-            </script>
-                <!-- this is where UI end -->
-    </html>
-104.16.68.10#CF优选IP 150ms 端口2096 美国
-104.16.135.2#CF优选IP 150ms 端口2096 美国
-104.18.163.14#CF优选IP 150ms 端口2083 美国
-104.16.161.5#CF优选IP 150ms 端口443 美国
-104.16.7.9#CF优选IP 150ms 端口8443 美国
-104.16.70.20#CF优选IP 150ms 端口2083 美国
-104.18.196.10#CF优选IP 150ms 端口443 美国
-104.16.160.16#CF优选IP 150ms 端口8443 美国
-104.16.7.25#CF优选IP 150ms 端口2083 美国
-104.16.71.20#CF优选IP 150ms 端口2087 美国
-104.18.163.9#CF优选IP 150ms 端口443 美国
-104.18.164.21#CF优选IP 150ms 端口8443 美国
-104.16.134.19#CF优选IP 150ms 端口2083 美国
-104.18.192.11#CF优选IP 150ms 端口2096 美国
-104.16.161.23#CF优选IP 150ms 端口443 美国
-104.18.132.7#CF优选IP 150ms 端口443 美国
-104.16.67.14#CF优选IP 150ms 端口2083 美国
-104.16.68.7#CF优选IP 150ms 端口2053 美国
-104.18.131.13#CF优选IP 150ms 端口2053 美国
-104.16.96.23#CF优选IP 150ms 端口2053 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Secure Login | Access Your Securly Account</title>
-  <meta name="description" content="Log in to your Securly account using your school's Google or Microsoft Azure account.">
-</head>
-
-    <!-- this is where UI start  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="app/css/login-layouts.css">
-    <style>
-        body {
-            background-color: #F7FAFC;
-        }
-    </style>
-    <div class="row hide">
-        <div class="col-sm-5 left-bg-img girl-bg hidden-xs">
-            <a href="/"><img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo"></a>
-
-        </div>
-        <div class="col-sm-7 right-bg-content">
-
-            <section>
-                <div class="form-section">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password..</span>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=2962758760&url=aXBhcGkuY28vMTA0LjE2Ljk2LjIzL2NvdW50cnlfbmFtZS8=&rand=916885154&type=1" class="btn google-button">Login with Google</a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=2962758760&url=aXBhcGkuY28vMTA0LjE2Ljk2LjIzL2NvdW50cnlfbmFtZS8=&rand=916885154&type=2" class="btn azure-button">Login with Microsoft Azure AD</a>
-            </section>
-        </div>
-    </div>
-<!-- New html layout -->
-<div class="container aligned-container student-login-image">
-    <div class="row">
-        <div class="col-sm-6 form-col col-sm-push-6">
-            <section>
-                <div class="form-section box-design">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password.</span>
-                    <!-- S: REL-715 -->
-                    <!-- <a href="/app/login?type=1" class="btn google-button">Login with Google</a> -->
-                    <!-- <a href="/app/login?type=2" class="btn azure-button">Login with Microsoft Azure AD</a> -->
-                    <!-- S: REL-715 -->
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=2962758760&url=aXBhcGkuY28vMTA0LjE2Ljk2LjIzL2NvdW50cnlfbmFtZS8=&rand=916885154&type=1" class="btn btnn btn-google">
-                        <img src="/app/images/g-logo.png" alt="Google Icon"><span>Login with Google</span>
-                    </a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=2962758760&url=aXBhcGkuY28vMTA0LjE2Ljk2LjIzL2NvdW50cnlfbmFtZS8=&rand=916885154&type=2" class="btn btnn btn-azure">
-                        <img src="/app/images/ms-logo.png" alt="MS Azure Icon"><span>Login with Microsoft Azure AD</span>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-                <script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-            <script>
-                $.get('https://sslcheck.securly.com/', function() {})
-                    .fail(function() {
-                        certReport(false);
-                    })
-                    .done(function() {
-                        certReport(true);
-                    });
-                function certReport(status) {
-                    $.post("/app/schools/ajax/certReport.php", { fid: "none - (login)", user:  "(none - login)", time: Math.floor(Date.now()/1000), certStatus: status });
-                }
-            </script>
-                <!-- this is where UI end -->
-    </html>
-104.16.134.24#CF优选IP 150ms 端口2053 美国
-104.18.102.22#CF优选IP 150ms 端口8443 美国
-104.16.71.14#CF优选IP 150ms 端口443 美国
-104.18.129.14#CF优选IP 150ms 端口2053 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Secure Login | Access Your Securly Account</title>
-  <meta name="description" content="Log in to your Securly account using your school's Google or Microsoft Azure account.">
-</head>
-
-    <!-- this is where UI start  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="app/css/login-layouts.css">
-    <style>
-        body {
-            background-color: #F7FAFC;
-        }
-    </style>
-    <div class="row hide">
-        <div class="col-sm-5 left-bg-img girl-bg hidden-xs">
-            <a href="/"><img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo"></a>
-
-        </div>
-        <div class="col-sm-7 right-bg-content">
-
-            <section>
-                <div class="form-section">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password..</span>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=430316648&url=aXBhcGkuY28vMTA0LjE4LjEyOS4xNC9jb3VudHJ5X25hbWUv&pac=true&rand=838640983&spac_did_sync_token=6146007c2c3b0a680bfc3294aaa77842&type=1" class="btn google-button">Login with Google</a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=430316648&url=aXBhcGkuY28vMTA0LjE4LjEyOS4xNC9jb3VudHJ5X25hbWUv&pac=true&rand=838640983&spac_did_sync_token=6146007c2c3b0a680bfc3294aaa77842&type=2" class="btn azure-button">Login with Microsoft Azure AD</a>
-            </section>
-        </div>
-    </div>
-<!-- New html layout -->
-<div class="container aligned-container student-login-image">
-    <div class="row">
-        <div class="col-sm-6 form-col col-sm-push-6">
-            <section>
-                <div class="form-section box-design">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password.</span>
-                    <!-- S: REL-715 -->
-                    <!-- <a href="/app/login?type=1" class="btn google-button">Login with Google</a> -->
-                    <!-- <a href="/app/login?type=2" class="btn azure-button">Login with Microsoft Azure AD</a> -->
-                    <!-- S: REL-715 -->
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=430316648&url=aXBhcGkuY28vMTA0LjE4LjEyOS4xNC9jb3VudHJ5X25hbWUv&pac=true&rand=838640983&spac_did_sync_token=6146007c2c3b0a680bfc3294aaa77842&type=1" class="btn btnn btn-google">
-                        <img src="/app/images/g-logo.png" alt="Google Icon"><span>Login with Google</span>
-                    </a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=430316648&url=aXBhcGkuY28vMTA0LjE4LjEyOS4xNC9jb3VudHJ5X25hbWUv&pac=true&rand=838640983&spac_did_sync_token=6146007c2c3b0a680bfc3294aaa77842&type=2" class="btn btnn btn-azure">
-                        <img src="/app/images/ms-logo.png" alt="MS Azure Icon"><span>Login with Microsoft Azure AD</span>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-                <script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-            <script>
-                $.get('https://sslcheck.securly.com/', function() {})
-                    .fail(function() {
-                        certReport(false);
-                    })
-                    .done(function() {
-                        certReport(true);
-                    });
-                function certReport(status) {
-                    $.post("/app/schools/ajax/certReport.php", { fid: "none - (login)", user:  "(none - login)", time: Math.floor(Date.now()/1000), certStatus: status });
-                }
-            </script>
-                <!-- this is where UI end -->
-    </html>
-104.16.164.6#CF优选IP 150ms 端口2083 美国
-104.18.163.22#CF优选IP 150ms 端口2053 美国
-104.16.165.11#CF优选IP 150ms 端口2087 美国
-104.18.192.13#CF优选IP 150ms 端口2083 美国
-104.16.135.10#CF优选IP 150ms 端口2053 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Secure Login | Access Your Securly Account</title>
-  <meta name="description" content="Log in to your Securly account using your school's Google or Microsoft Azure account.">
-</head>
-
-    <!-- this is where UI start  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="app/css/login-layouts.css">
-    <style>
-        body {
-            background-color: #F7FAFC;
-        }
-    </style>
-    <div class="row hide">
-        <div class="col-sm-5 left-bg-img girl-bg hidden-xs">
-            <a href="/"><img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo"></a>
-
-        </div>
-        <div class="col-sm-7 right-bg-content">
-
-            <section>
-                <div class="form-section">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password..</span>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=732306536&url=aXBhcGkuY28vMTA0LjE2LjEzNS4xMC9jb3VudHJ5X25hbWUv&rand=1372494400&type=1" class="btn google-button">Login with Google</a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=732306536&url=aXBhcGkuY28vMTA0LjE2LjEzNS4xMC9jb3VudHJ5X25hbWUv&rand=1372494400&type=2" class="btn azure-button">Login with Microsoft Azure AD</a>
-            </section>
-        </div>
-    </div>
-<!-- New html layout -->
-<div class="container aligned-container student-login-image">
-    <div class="row">
-        <div class="col-sm-6 form-col col-sm-push-6">
-            <section>
-                <div class="form-section box-design">
-                    <h2>Login to continue</h2>
-                    <span class="gray-tip">Please log in with your school email and password.</span>
-                    <!-- S: REL-715 -->
-                    <!-- <a href="/app/login?type=1" class="btn google-button">Login with Google</a> -->
-                    <!-- <a href="/app/login?type=2" class="btn azure-button">Login with Microsoft Azure AD</a> -->
-                    <!-- S: REL-715 -->
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=732306536&url=aXBhcGkuY28vMTA0LjE2LjEzNS4xMC9jb3VudHJ5X25hbWUv&rand=1372494400&type=1" class="btn btnn btn-google">
-                        <img src="/app/images/g-logo.png" alt="Google Icon"><span>Login with Google</span>
-                    </a>
-                    <a href="https://www.securly.com/loginssoAzure.php?reason=&categoryid=4398054899712&policyid=0&i2n=732306536&url=aXBhcGkuY28vMTA0LjE2LjEzNS4xMC9jb3VudHJ5X25hbWUv&rand=1372494400&type=2" class="btn btnn btn-azure">
-                        <img src="/app/images/ms-logo.png" alt="MS Azure Icon"><span>Login with Microsoft Azure AD</span>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-                <script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-            <script>
-                $.get('https://sslcheck.securly.com/', function() {})
-                    .fail(function() {
-                        certReport(false);
-                    })
-                    .done(function() {
-                        certReport(true);
-                    });
-                function certReport(status) {
-                    $.post("/app/schools/ajax/certReport.php", { fid: "none - (login)", user:  "(none - login)", time: Math.floor(Date.now()/1000), certStatus: status });
-                }
-            </script>
-                <!-- this is where UI end -->
-    </html>
-104.18.135.17#CF优选IP 150ms 端口8443 美国
-104.16.131.2#CF优选IP 150ms 端口2087 美国
-104.16.0.11#CF优选IP 150ms 端口2083 美国
-104.16.6.2#CF优选IP 150ms 端口2053 美国
-104.16.4.24#CF优选IP 150ms 端口8443 美国
-104.16.0.25#CF优选IP 150ms 端口2083 美国
-104.16.1.1#CF优选IP 150ms 端口443 美国
-104.18.128.20#CF优选IP 150ms 端口2083 美国
-104.16.69.19#CF优选IP 150ms 端口2083 未知
-104.16.1.18#CF优选IP 150ms 端口443 美国
-104.18.129.2#CF优选IP 150ms 端口2053 美国
-104.16.160.1#CF优选IP 150ms 端口2087 未知
-104.18.100.21#CF优选IP 150ms 端口2053 美国
-104.18.195.15#CF优选IP 150ms 端口2096 美国
-104.16.98.20#CF优选IP 150ms 端口2053 美国
-104.18.160.9#CF优选IP 150ms 端口2053 美国
-104.16.100.9#CF优选IP 150ms 端口443 美国
-104.16.66.25#CF优选IP 150ms 端口443 美国
-104.18.162.10#CF优选IP 150ms 端口443 未知
-104.18.97.16#CF优选IP 150ms 端口2083 未知
-104.16.167.14#CF优选IP 150ms 端口2096 未知
-104.16.67.6#CF优选IP 150ms 端口2053 未知
-104.18.167.6#CF优选IP 150ms 端口2083 未知
-104.16.103.8#CF优选IP 150ms 端口2053 未知
-104.16.97.14#CF优选IP 150ms 端口2053 未知
-104.18.99.14#CF优选IP 150ms 端口2053 未知
-104.18.129.1#CF优选IP 150ms 端口2053 未知
-104.16.98.21#CF优选IP 150ms 端口8443 未知
-104.18.129.21#CF优选IP 150ms 端口2053 未知
-104.18.103.23#CF优选IP 150ms 端口443 未知
-104.18.103.22#CF优选IP 150ms 端口2096 未知
-104.16.1.2#CF优选IP 150ms 端口2053 未知
-104.18.99.12#CF优选IP 150ms 端口2053 未知
-104.16.166.22#CF优选IP 150ms 端口2087 未知
-104.18.193.12#CF优选IP 150ms 端口8443 未知
-104.16.96.3#CF优选IP 150ms 端口443 未知
-104.16.69.17#CF优选IP 150ms 端口2087 未知
-104.18.197.8#CF优选IP 150ms 端口8443 未知
-104.16.4.3#CF优选IP 150ms 端口2083 未知
-104.18.192.12#CF优选IP 150ms 端口2083 未知
-104.16.71.11#CF优选IP 150ms 端口2083 未知
-104.18.162.16#CF优选IP 150ms 端口2083 未知
-104.16.162.18#CF优选IP 150ms 端口443 未知
-104.16.65.2#CF优选IP 150ms 端口443 未知
-104.16.68.16#CF优选IP 150ms 端口2083 未知
-104.16.162.13#CF优选IP 150ms 端口2087 未知
-104.16.65.22#CF优选IP 150ms 端口443 未知
-104.18.100.7#CF优选IP 150ms 端口2096 未知
-104.16.167.5#CF优选IP 150ms 端口2083 未知
-104.16.2.15#CF优选IP 150ms 端口443 未知
-104.16.68.11#CF优选IP 150ms 端口2087 未知
-104.16.2.9#CF优选IP 150ms 端口2087 未知
-104.18.160.12#CF优选IP 150ms 端口2096 未知
-104.16.71.19#CF优选IP 150ms 端口2087 未知
-104.16.4.10#CF优选IP 150ms 端口2096 未知
-104.18.196.16#CF优选IP 150ms 端口2087 未知
-104.18.192.2#CF优选IP 150ms 端口2096 未知
-104.16.101.24#CF优选IP 150ms 端口2053 未知
-104.18.130.9#CF优选IP 150ms 端口2087 未知
-104.16.97.21#CF优选IP 150ms 端口2053 未知
-104.16.97.20#CF优选IP 150ms 端口443 未知
-104.16.100.17#CF优选IP 150ms 端口2053 未知
-104.16.102.1#CF优选IP 151ms 端口2087 未知
-104.16.134.10#CF优选IP 151ms 端口2087 未知
-104.16.167.3#CF优选IP 151ms 端口2096 未知
-108.162.198.2#CF优选IP 151ms 端口2083 未知
-104.16.165.3#CF优选IP 151ms 端口2083 未知
-104.16.167.2#CF优选IP 151ms 端口2096 未知
-104.18.162.17#CF优选IP 151ms 端口2053 未知
-104.16.99.23#CF优选IP 151ms 端口443 未知
-104.18.129.17#CF优选IP 151ms 端口2083 未知
-104.18.193.15#CF优选IP 151ms 端口443 未知
-104.18.194.14#CF优选IP 151ms 端口2083 未知
-104.16.165.9#CF优选IP 151ms 端口2096 未知
-104.18.135.2#CF优选IP 151ms 端口8443 未知
-104.18.135.22#CF优选IP 151ms 端口443 未知
-104.18.100.22#CF优选IP 151ms 端口2053 未知
-104.18.134.9#CF优选IP 151ms 端口2053 未知
-104.16.160.21#CF优选IP 151ms 端口2083 未知
-104.16.135.5#CF优选IP 151ms 端口2053 未知
-104.18.164.6#CF优选IP 151ms 端口2083 未知
-104.18.162.1#CF优选IP 151ms 端口2083 未知
-104.16.0.12#CF优选IP 151ms 端口2087 未知
-104.16.133.6#CF优选IP 151ms 端口2096 未知
-104.16.66.6#CF优选IP 151ms 端口8443 未知
-104.18.128.2#CF优选IP 151ms 端口2053 未知
-104.16.66.3#CF优选IP 151ms 端口2087 未知
-104.16.162.9#CF优选IP 151ms 端口8443 未知
-104.18.197.16#CF优选IP 151ms 端口443 未知
-104.16.99.24#CF优选IP 151ms 端口2096 未知
-104.16.134.14#CF优选IP 151ms 端口2096 未知
-104.16.167.1#CF优选IP 151ms 端口2053 未知
-104.18.162.7#CF优选IP 151ms 端口2087 未知
-104.16.4.6#CF优选IP 151ms 端口443 未知
-104.16.164.7#CF优选IP 151ms 端口2096 未知
-104.18.129.10#CF优选IP 151ms 端口2053 未知
-104.16.102.3#CF优选IP 151ms 端口2083 未知
-104.18.97.1#CF优选IP 151ms 端口2087 未知
-104.16.64.22#CF优选IP 151ms 端口2053 未知
-104.16.167.9#CF优选IP 151ms 端口2083 未知
-104.18.164.1#CF优选IP 151ms 端口2053 未知
-104.16.65.24#CF优选IP 151ms 端口443 未知
-104.16.6.18#CF优选IP 151ms 端口2087 未知
-104.16.67.8#CF优选IP 151ms 端口443 未知
-104.16.1.24#CF优选IP 151ms 端口2087 未知
-104.16.130.17#CF优选IP 151ms 端口2053 未知
-104.16.103.17#CF优选IP 151ms 端口2087 未知
-104.16.133.24#CF优选IP 151ms 端口2096 未知
-104.16.3.7#CF优选IP 151ms 端口2087 未知
-104.18.132.5#CF优选IP 151ms 端口2053 未知
-104.16.134.9#CF优选IP 151ms 端口2096 未知
-104.18.196.8#CF优选IP 151ms 端口8443 未知
-104.18.128.4#CF优选IP 151ms 端口2053 未知
-104.16.68.9#CF优选IP 151ms 端口2053 未知
-104.16.99.6#CF优选IP 151ms 端口2087 未知
-104.18.193.16#CF优选IP 151ms 端口2053 未知
-104.16.161.8#CF优选IP 151ms 端口443 未知
-104.16.131.8#CF优选IP 151ms 端口443 未知
-104.18.135.23#CF优选IP 151ms 端口2053 未知
-104.16.164.12#CF优选IP 151ms 端口2053 未知
-104.16.129.7#CF优选IP 151ms 端口443 未知
-104.16.4.15#CF优选IP 151ms 端口2087 未知
-104.16.2.8#CF优选IP 151ms 端口2053 未知
-104.16.164.14#CF优选IP 151ms 端口2083 未知
-104.18.101.22#CF优选IP 151ms 端口2053 未知
-104.18.162.5#CF优选IP 151ms 端口2053 未知
-104.18.99.10#CF优选IP 151ms 端口2083 未知
-104.16.103.6#CF优选IP 151ms 端口2053 未知
-104.16.99.1#CF优选IP 151ms 端口2083 未知
-104.18.101.23#CF优选IP 151ms 端口2053 未知
-104.16.160.5#CF优选IP 151ms 端口2083 未知
-104.18.134.16#CF优选IP 151ms 端口2087 未知
-104.18.102.9#CF优选IP 151ms 端口443 未知
-104.16.128.1#CF优选IP 151ms 端口2053 未知
-104.18.199.3#CF优选IP 151ms 端口443 未知
-104.16.135.25#CF优选IP 151ms 端口8443 未知
-104.18.195.10#CF优选IP 151ms 端口2083 未知
-104.16.5.20#CF优选IP 151ms 端口2083 未知
-104.18.103.1#CF优选IP 151ms 端口443 未知
-104.16.163.7#CF优选IP 151ms 端口8443 未知
-104.16.97.23#CF优选IP 151ms 端口2087 未知
-104.18.199.2#CF优选IP 151ms 端口2096 未知
-104.16.96.22#CF优选IP 151ms 端口443 未知
-104.16.71.4#CF优选IP 151ms 端口8443 未知
-104.16.99.20#CF优选IP 151ms 端口443 未知
-104.16.135.7#CF优选IP 151ms 端口2096 未知
-104.18.192.25#CF优选IP 151ms 端口2083 未知
-104.18.162.15#CF优选IP 151ms 端口2087 未知
-104.16.100.12#CF优选IP 151ms 端口2053 未知
-104.16.71.17#CF优选IP 151ms 端口443 未知
-104.16.1.25#CF优选IP 151ms 端口443 未知
-104.16.66.12#CF优选IP 151ms 端口2096 未知
-104.18.195.23#CF优选IP 151ms 端口8443 未知
-104.16.103.21#CF优选IP 151ms 端口2053 未知
-104.16.70.15#CF优选IP 151ms 端口443 未知
-104.16.100.4#CF优选IP 151ms 端口2053 未知
-104.16.4.18#CF优选IP 151ms 端口2096 未知
-104.18.103.8#CF优选IP 151ms 端口443 未知
-104.16.132.10#CF优选IP 151ms 端口2096 未知
-104.18.102.24#CF优选IP 151ms 端口443 未知
-104.16.101.3#CF优选IP 151ms 端口443 未知
-104.18.192.24#CF优选IP 151ms 端口2053 未知
-104.18.99.7#CF优选IP 151ms 端口2053 未知
-104.18.161.20#CF优选IP 151ms 端口2083 未知
-104.16.101.14#CF优选IP 151ms 端口2083 未知
-104.16.96.5#CF优选IP 151ms 端口2053 未知
-104.16.68.14#CF优选IP 151ms 端口2087 未知
-104.18.130.7#CF优选IP 151ms 端口2087 未知
-104.16.132.12#CF优选IP 151ms 端口443 未知
-104.18.194.6#CF优选IP 151ms 端口2083 未知
-104.16.161.15#CF优选IP 151ms 端口2087 未知
-104.18.167.2#CF优选IP 151ms 端口2087 未知
-104.18.197.4#CF优选IP 151ms 端口2087 未知
-104.18.166.22#CF优选IP 151ms 端口8443 未知
-104.16.129.11#CF优选IP 151ms 端口2087 未知
-104.16.3.18#CF优选IP 151ms 端口8443 未知
-104.18.164.15#CF优选IP 151ms 端口2053 未知
-104.16.161.21#CF优选IP 151ms 端口2087 未知
-104.16.101.16#CF优选IP 151ms 端口8443 未知
-104.18.160.22#CF优选IP 151ms 端口2083 未知
-104.16.130.21#CF优选IP 151ms 端口443 未知
-104.16.0.15#CF优选IP 151ms 端口2053 未知
-104.16.134.15#CF优选IP 151ms 端口2083 未知
-104.16.161.12#CF优选IP 151ms 端口2096 未知
-104.18.103.5#CF优选IP 151ms 端口443 未知
-104.16.130.22#CF优选IP 151ms 端口443 未知
-104.16.65.3#CF优选IP 151ms 端口2083 未知
-104.16.69.21#CF优选IP 151ms 端口8443 未知
-104.16.3.9#CF优选IP 151ms 端口443 未知
-104.18.128.16#CF优选IP 151ms 端口8443 未知
-104.16.165.17#CF优选IP 151ms 端口443 未知
-104.16.101.8#CF优选IP 151ms 端口443 未知
-104.18.192.14#CF优选IP 151ms 端口2053 未知
-104.16.101.1#CF优选IP 151ms 端口2053 未知
-108.162.198.19#CF优选IP 151ms 端口2053 未知
-104.16.164.13#CF优选IP 151ms 端口443 未知
-104.16.133.5#CF优选IP 151ms 端口443 未知
-104.16.7.22#CF优选IP 151ms 端口2083 未知
-104.18.96.17#CF优选IP 151ms 端口2083 未知
-104.18.165.7#CF优选IP 151ms 端口443 未知
-104.16.6.20#CF优选IP 151ms 端口2096 未知
-104.16.103.9#CF优选IP 151ms 端口2053 未知
-104.16.166.14#CF优选IP 151ms 端口8443 未知
-104.18.166.24#CF优选IP 151ms 端口2083 未知
-104.16.70.21#CF优选IP 151ms 端口2087 未知
-104.18.98.15#CF优选IP 151ms 端口2096 未知
-104.16.160.24#CF优选IP 151ms 端口8443 未知
-104.18.98.6#CF优选IP 151ms 端口2096 未知
-104.18.160.17#CF优选IP 151ms 端口443 未知
-104.18.133.13#CF优选IP 151ms 端口2083 未知
-104.18.133.9#CF优选IP 151ms 端口2087 未知
-104.16.2.12#CF优选IP 151ms 端口443 未知
-104.18.199.23#CF优选IP 151ms 端口2087 未知
-104.16.130.25#CF优选IP 151ms 端口2053 未知
-104.16.131.17#CF优选IP 151ms 端口2083 未知
-104.16.67.3#CF优选IP 151ms 端口2096 未知
-104.16.6.24#CF优选IP 151ms 端口2096 未知
-104.16.3.3#CF优选IP 151ms 端口2087 未知
+104.26.0.15#CF 优选IP 87ms
+104.26.0.3#CF 优选IP 87ms
+104.26.0.6#CF 优选IP 89ms
+104.26.0.12#CF 优选IP 89ms
+104.26.0.10#CF 优选IP 90ms
+104.26.0.4#CF 优选IP 90ms
+104.26.0.2#CF 优选IP 91ms
+104.26.0.7#CF 优选IP 91ms
+104.26.0.1#CF 优选IP 91ms
+104.26.0.11#CF 优选IP 91ms
+104.26.0.13#CF 优选IP 91ms
+104.26.0.8#CF 优选IP 94ms
+104.26.0.9#CF 优选IP 94ms
+104.26.0.5#CF 优选IP 96ms
+104.26.0.14#CF 优选IP 97ms
+104.17.0.5#CF 优选IP 150ms
+104.16.0.12#CF 优选IP 150ms
+104.16.0.11#CF 优选IP 151ms
+104.16.0.9#CF 优选IP 151ms
+104.17.0.6#CF 优选IP 152ms
+104.16.0.13#CF 优选IP 152ms
+104.17.0.9#CF 优选IP 154ms
+104.16.0.8#CF 优选IP 154ms
+104.17.0.7#CF 优选IP 155ms
+104.17.0.4#CF 优选IP 157ms
+104.17.0.13#CF 优选IP 158ms
+104.16.0.2#CF 优选IP 158ms
+104.16.0.3#CF 优选IP 158ms
+104.16.0.1#CF 优选IP 159ms
+104.17.0.14#CF 优选IP 164ms
+108.162.192.4#CF 优选IP 166ms
+104.16.0.7#CF 优选IP 167ms
+104.18.0.5#CF 优选IP 169ms
+172.64.229.1#CF 优选IP 169ms
+103.21.244.9#CF 优选IP 170ms
+104.25.0.5#CF 优选IP 170ms
+104.18.0.11#CF 优选IP 171ms
+103.21.244.11#CF 优选IP 172ms
+104.18.0.10#CF 优选IP 173ms
+108.162.192.10#CF 优选IP 173ms
+162.159.0.10#CF 优选IP 173ms
+104.25.0.15#CF 优选IP 173ms
+104.18.0.3#CF 优选IP 173ms
+104.25.0.1#CF 优选IP 174ms
+108.162.192.1#CF 优选IP 175ms
+104.27.0.12#CF 优选IP 175ms
+162.159.0.11#CF 优选IP 176ms
+108.162.192.6#CF 优选IP 176ms
+104.18.0.9#CF 优选IP 177ms
+104.19.0.8#CF 优选IP 177ms
+172.64.229.13#CF 优选IP 177ms
+104.24.0.8#CF 优选IP 177ms
+104.24.0.9#CF 优选IP 177ms
+103.31.4.7#CF 优选IP 177ms
+104.20.0.15#CF 优选IP 178ms
+103.31.4.6#CF 优选IP 178ms
+103.21.244.13#CF 优选IP 178ms
+104.17.0.15#CF 优选IP 178ms
+104.25.0.9#CF 优选IP 178ms
+103.31.4.3#CF 优选IP 178ms
+108.162.192.3#CF 优选IP 179ms
+103.21.244.10#CF 优选IP 179ms
+103.21.244.5#CF 优选IP 179ms
+103.31.4.12#CF 优选IP 179ms
+104.19.0.11#CF 优选IP 180ms
+104.18.0.14#CF 优选IP 180ms
+172.64.229.5#CF 优选IP 180ms
+104.20.0.4#CF 优选IP 180ms
+172.64.229.3#CF 优选IP 180ms
+104.18.0.4#CF 优选IP 180ms
+162.159.0.14#CF 优选IP 181ms
+162.159.0.4#CF 优选IP 181ms
+104.24.0.11#CF 优选IP 181ms
+172.64.229.15#CF 优选IP 181ms
+104.18.0.13#CF 优选IP 181ms
+104.17.0.1#CF 优选IP 182ms
+104.24.0.14#CF 优选IP 182ms
+162.159.0.7#CF 优选IP 182ms
+104.19.0.13#CF 优选IP 182ms
+103.21.244.12#CF 优选IP 182ms
+104.18.0.7#CF 优选IP 182ms
+104.16.0.10#CF 优选IP 182ms
+104.17.0.3#CF 优选IP 182ms
+104.27.0.15#CF 优选IP 183ms
+103.31.4.9#CF 优选IP 183ms
+162.159.0.9#CF 优选IP 183ms
+104.16.0.15#CF 优选IP 183ms
+103.31.4.1#CF 优选IP 183ms
+172.64.229.2#CF 优选IP 183ms
+104.17.0.12#CF 优选IP 183ms
+104.18.0.12#CF 优选IP 183ms
+104.16.0.14#CF 优选IP 183ms
+108.162.192.7#CF 优选IP 184ms
+104.20.0.7#CF 优选IP 184ms
+104.27.0.1#CF 优选IP 184ms
+104.19.0.9#CF 优选IP 184ms
+104.27.0.2#CF 优选IP 184ms
+104.16.0.6#CF 优选IP 184ms
+104.17.0.2#CF 优选IP 184ms
+162.159.0.2#CF 优选IP 184ms
+172.64.229.8#CF 优选IP 184ms
+104.17.0.10#CF 优选IP 184ms
+162.159.0.3#CF 优选IP 185ms
+103.21.244.15#CF 优选IP 185ms
+103.21.244.6#CF 优选IP 185ms
+108.162.192.15#CF 优选IP 185ms
+172.64.229.9#CF 优选IP 185ms
+108.162.192.8#CF 优选IP 185ms
+103.31.4.4#CF 优选IP 185ms
+172.64.229.6#CF 优选IP 185ms
+162.159.0.6#CF 优选IP 185ms
+104.27.0.4#CF 优选IP 185ms
+162.159.0.13#CF 优选IP 186ms
+162.159.0.5#CF 优选IP 186ms
+172.64.229.14#CF 优选IP 186ms
+103.31.4.13#CF 优选IP 186ms
+108.162.192.14#CF 优选IP 186ms
+103.31.4.15#CF 优选IP 186ms
+103.21.244.3#CF 优选IP 186ms
+104.25.0.7#CF 优选IP 187ms
+103.21.244.4#CF 优选IP 187ms
+172.64.229.4#CF 优选IP 187ms
+104.20.0.9#CF 优选IP 187ms
+104.18.0.8#CF 优选IP 187ms
+104.20.0.5#CF 优选IP 188ms
+104.24.0.6#CF 优选IP 188ms
+108.162.192.2#CF 优选IP 188ms
+104.18.0.2#CF 优选IP 189ms
+104.25.0.10#CF 优选IP 189ms
+108.162.192.13#CF 优选IP 189ms
+104.24.0.12#CF 优选IP 189ms
+104.19.0.10#CF 优选IP 190ms
+103.21.244.2#CF 优选IP 190ms
+172.64.229.11#CF 优选IP 190ms
+162.159.0.15#CF 优选IP 190ms
+103.21.244.8#CF 优选IP 191ms
+103.31.4.14#CF 优选IP 191ms
+104.18.0.6#CF 优选IP 191ms
+103.21.244.7#CF 优选IP 191ms
+104.18.0.1#CF 优选IP 191ms
+108.162.192.12#CF 优选IP 192ms
+104.17.0.8#CF 优选IP 192ms
+104.27.0.13#CF 优选IP 192ms
+104.19.0.1#CF 优选IP 192ms
+104.17.0.11#CF 优选IP 192ms
+104.18.0.15#CF 优选IP 193ms
+104.27.0.10#CF 优选IP 193ms
+162.159.0.8#CF 优选IP 193ms
+104.24.0.4#CF 优选IP 193ms
+104.20.0.1#CF 优选IP 193ms
+108.162.192.9#CF 优选IP 194ms
+172.64.229.7#CF 优选IP 194ms
+103.31.4.2#CF 优选IP 195ms
+108.162.192.5#CF 优选IP 195ms
+104.19.0.12#CF 优选IP 195ms
+162.159.0.1#CF 优选IP 195ms
+103.21.244.1#CF 优选IP 196ms
+104.27.0.9#CF 优选IP 196ms
+104.19.0.5#CF 优选IP 196ms
+108.162.192.11#CF 优选IP 196ms
+172.64.229.10#CF 优选IP 196ms
+172.64.229.12#CF 优选IP 196ms
+162.159.0.12#CF 优选IP 197ms
+103.21.244.14#CF 优选IP 197ms
+104.20.0.12#CF 优选IP 198ms
+104.16.0.4#CF 优选IP 200ms
+104.16.0.5#CF 优选IP 200ms
+104.25.0.3#CF 优选IP 203ms
+103.31.4.8#CF 优选IP 203ms
+104.27.0.11#CF 优选IP 208ms
+103.31.4.5#CF 优选IP 210ms
+104.27.0.3#CF 优选IP 211ms
+104.25.0.8#CF 优选IP 224ms
+103.31.4.10#CF 优选IP 229ms
+103.31.4.11#CF 优选IP 239ms
+104.25.0.11#CF 优选IP 239ms
+104.25.0.13#CF 优选IP 243ms
+104.20.0.2#CF 优选IP 269ms
+104.27.0.6#CF 优选IP 275ms
+104.20.0.3#CF 优选IP 291ms
+104.24.0.5#CF 优选IP 300ms
+104.24.0.3#CF 优选IP 324ms
+104.19.0.3#CF 优选IP 343ms
+104.20.0.6#CF 优选IP 350ms
+104.27.0.5#CF 优选IP 374ms
+104.24.0.1#CF 优选IP 396ms
+104.19.0.2#CF 优选IP 399ms
+104.27.0.7#CF 优选IP 412ms
+104.20.0.8#CF 优选IP 421ms
+104.24.0.10#CF 优选IP 422ms
+104.25.0.12#CF 优选IP 428ms
+104.20.0.13#CF 优选IP 432ms
+104.19.0.14#CF 优选IP 435ms
+104.19.0.6#CF 优选IP 436ms
+104.24.0.13#CF 优选IP 449ms
+104.24.0.15#CF 优选IP 450ms
+104.20.0.11#CF 优选IP 457ms
+104.27.0.8#CF 优选IP 471ms
+104.25.0.6#CF 优选IP 485ms
+104.20.0.10#CF 优选IP 488ms
+104.27.0.14#CF 优选IP 505ms
+104.20.0.14#CF 优选IP 510ms
+104.19.0.4#CF 优选IP 516ms
+104.24.0.2#CF 优选IP 518ms
+104.25.0.4#CF 优选IP 525ms
+104.19.0.7#CF 优选IP 535ms
+104.25.0.14#CF 优选IP 537ms
+104.24.0.7#CF 优选IP 552ms
+104.25.0.2#CF 优选IP 553ms
+104.19.0.15#CF 优选IP 602ms
+188.114.96.6#CF 优选IP 604ms
+104.21.0.5#CF 优选IP 716ms
+104.21.0.8#CF 优选IP 753ms
+188.114.96.5#CF 优选IP 755ms
+188.114.96.8#CF 优选IP 757ms
+188.114.96.1#CF 优选IP 793ms
+104.21.0.7#CF 优选IP 796ms
+188.114.96.3#CF 优选IP 891ms
+188.114.96.12#CF 优选IP 912ms
+104.21.0.1#CF 优选IP 936ms
+104.21.0.11#CF 优选IP 943ms
+104.21.0.10#CF 优选IP 944ms
+188.114.96.15#CF 优选IP 952ms
+104.21.0.12#CF 优选IP 954ms
+104.21.0.3#CF 优选IP 955ms
+104.21.0.2#CF 优选IP 956ms
+188.114.96.11#CF 优选IP 958ms
+188.114.96.13#CF 优选IP 966ms
+188.114.96.2#CF 优选IP 972ms
+104.21.0.14#CF 优选IP 974ms
+188.114.96.4#CF 优选IP 976ms
+104.21.0.13#CF 优选IP 976ms
+188.114.96.14#CF 优选IP 980ms
+188.114.96.9#CF 优选IP 1756ms
+104.21.0.6#CF 优选IP 1791ms
+104.21.0.9#CF 优选IP 1903ms
+188.114.96.7#CF 优选IP 1967ms
+188.114.96.10#CF 优选IP 1968ms
+104.21.0.4#CF 优选IP 1999ms
+104.21.0.15#CF 优选IP 2776ms
